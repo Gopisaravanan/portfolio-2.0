@@ -95,6 +95,8 @@ img {
 /* LAYOUT */
 .bd_grid {
   max-width: 1024px;
+  /* max-width: 100%; */
+  overflow-x: hidden;
   display: grid;
   grid-template-columns: 100%;
   grid-column-gap: 2rem;
@@ -124,11 +126,19 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .nav_toggle {
+  color: var(--second-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+}
+
+@media screen and (max-width: 768px) {
   .nav_menu {
     position: fixed;
     top: var(--header-height);
     right: -100%;
-    width: 80%;
+    width: 75%;
     height: 100%;
     padding: 2rem;
     background-color: var(--second-color);
@@ -344,20 +354,32 @@ img {
   z-index: var(--z-back);
 }
 
-.skill_html {
+/* .skill_html {
   width: 90%;
 }
 
 .skill_css {
   width: 85%;
 }
-
-.skill_js {
+.skill_bootstrap {
   width: 85%;
 }
 
-.skill_react {
+.skill_js {
   width: 80%;
+} */
+
+.skill_react {
+  width: 100%;
+}
+.skill_node {
+  width: 100%;
+}
+.skill_express {
+  width: 100%;
+}
+.skill_mongo {
+  width: 100%;
 }
 
 /* WORK */
@@ -409,7 +431,7 @@ img {
 
 /* Footer */
 .footer {
-  background-color: rgb(135, 221, 202);
+  background-color: rgba(255, 0, 162, 0.281);
   width: 100%;
   color: black;
   text-align: center;
